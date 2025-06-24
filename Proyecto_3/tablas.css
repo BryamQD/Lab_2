@@ -1,0 +1,47 @@
+
+/* Estilos básicos para hacer que la tabla se vea un poco mejor, similar a la imagen */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f2f5; /* Un gris claro para el fondo */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Para que las celdas no tengan espacio entre ellas */
+            background-color: #fff; /* Fondo blanco para la tabla */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera */
+            border-radius: 8px; /* Bordes redondeados */
+            overflow: hidden; /* Asegura que los bordes redondeados se apliquen bien */
+        }
+        th, td {
+            text-align: left;
+            padding: 12px 15px; /* Relleno interno para las celdas */
+            border-bottom: 1px solid #ddd; /* Línea divisoria entre filas */
+        }
+        th {
+            background-color: #e0f2f7; /* Un azul claro para el encabezado, similar al de la imagen */
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase; /* Mayúsculas en los encabezados */
+            font-size: 0.9em;
+        }
+        tr:hover {
+            background-color: #f5f5f5; /* Color al pasar el mouse por encima de la fila */
+        }
+        .profile-icon {
+            font-size: 1.5em; /* Tamaño del icono de perfil */
+            color: #999; /* Color gris */
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .last-message-date {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .blue-text {
+            color: #007bff; /* Un color azul para los enlaces/fechas clicables */
+            font-weight: bold;
+        }
+        .replies-count {
+            font-weight: bold;
+        }

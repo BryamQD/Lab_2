@@ -1,0 +1,100 @@
+  
+    body{
+      background-color: rgba(93, 93, 198, 0.623);
+      /* Color de fondo de la pagina */
+    }
+    .form-group label {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      display: block;
+      margin-left: 5px;
+      font-weight: bold;
+      /* Estilo de las etiquetas del formulario */
+    }
+ 
+    .form-input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px 0;
+      border: 1px solid #0f0a0a;
+      border-radius: 4px;
+      /* Estilo de los campos de entrada del formulario */
+    }
+
+    .form-input:focus {
+      border-color: #f70438;
+      outline: none;
+      /* Cambia el color del borde al enfocar */
+    }
+ 
+    .submit-button {
+      padding: 4px 20px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      margin-top: 9px;
+
+      /* Estilo del botón de envío */
+    }
+ 
+    .submit-button:hover {
+      background-color: #1f3970;
+      /* Un azul más oscuro al pasar el mouse */
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      /* Estilo del título principal */
+    }
+
+    main {
+      width: 50%;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+      /* Estilo del contenedor principal */
+    }
+
+    #video-section iframe{
+      width: 100%;
+      height: auto;
+      max-width: 800px;
+      display: flex;
+      border-radius: 7px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 18px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); 
+      /* Estilo de la sección del video */
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      /* Estilo del contenedor flexible */
+    }
+
+    .text {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y desenfoque */
+    }
+  
+    .elemento {
+     width: 90px;
+     height: 40px;
+     align-items: center;
+     transition: width 0.5s ease-in-out, background-color 1s linear;
+    }
+
+    .elemento:hover {
+      width: 230px;
+      height: 50px;
+      align-items: center;
+    }
+
+
+
+

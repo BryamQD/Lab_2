@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #1aaeee; /* Rojo principal, similar al de la imagen */
+    --secondary-color: #f7f7f7; /* Fondo claro para algunos elementos */
+    --text-color-light: white;
+    --text-color-dark: #333;
+    --border-color: #ddd;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+}
+
+.main-header {
+    background-color: var(--primary-color); /* Rojo del encabezado */
+    color: var(--text-color-light);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sutil sombra */
+}
+
+.header-content {
+    max-width: 1200px; /* Ancho máximo del contenido del encabezado */
+    margin: 0 auto;
+    display: flex; /* Para alinear elementos en fila */
+    justify-content: space-between; /* Espacia los elementos: logo, nav, iconos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+.logo img {
+    height: 50px; /* Ajusta el tamaño del logo */
+    width: auto;
+    display: block; /* Elimina espacio extra debajo de la imagen */
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para alinear los ítems del menú en fila */
+}
+
+.main-nav ul li {
+    position: relative; /* Necesario para el dropdown */
+    margin: 0 15px; /* Espacio entre los ítems del menú */
+}
+
+.main-nav ul li a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    font-size: 1em;
+    font-weight: bold; /* Los enlaces del menú se ven en negrita */
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li.dropdown .dropbtn:hover {
+    color: #fbfbfb; /* Color al pasar el ratón, un dorado suave */
+}
+
+/* Estilos para el Dropdown */
+.dropdown-content {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    background-color: var(--primary-color); /* Mismo color de fondo */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    border-top: 2px solid white; /* Línea blanca superior */
+}
+
+.dropdown-content a {
+    color: var(--text-color-light);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: normal; /* Los elementos del dropdown no son negrita */
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #2516cb; /* Un rojo un poco más oscuro al pasar el ratón */
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content.show { /* Clase 'show' para JavaScript */
+    display: block;
+}
+
+.dropbtn i {
+    margin-left: 5px; /* Espacio entre el texto y el icono de la flecha */
+}
+
+.form-input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px 0;
+      border: 1px solid #0f0a0a;
+      border-radius: 4px;
+      margin-top: 10px;
+      /* Estilo de los campos de entrada del formulario */
+    }
+
+    .form-input:focus {
+      border-color: #c93205;
+      outline: none;
+      /* Cambia el color del borde al enfocar */
+    }
+
+    main {
+      width: 50%;
+      max-width: 400px;
+      margin: auto;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+      /* Estilo del contenedor principal */
+    }
+
+    body{
+      background-color: rgba(168, 168, 172, 0.623);
+      /* Color de fondo de la pagina */
+    }
+
+    .fieldset {
+      border: 1px solid #807d7d;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: var(--secondary-color);
+      margin-top: 20px;
+      /* Estilo del fieldset */
+    }
+
+    .text {
+      padding: 6px;
+    }
+
+    .transition-box {
+        width: 120px;
+        height: 50px;
+        background-color: #f9fafb;
+        margin: 30px auto;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(13, 13, 13);
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.7s ease-in-out, transform 0.7s ease-in-out;
+    }
+
+    .transition-box:hover {
+        background-color: #2196F3;
+        color: rgb(247, 247, 247);
+        transform: scale(1.1);
+    }
+
+    #video-section iframe{
+      width: 100%;
+      height: 300px;
+      max-width: 800px;
+      max-height: 600px;
+      display: flex;
+      border-radius: 7px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 18px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); 
+      /* Estilo de la sección del video */
+}
